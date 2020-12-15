@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int rows,space,i,j;
+printf("Input:");
+scand("%d",rows);
+for(i=0;i<=rows;i++)
+{
+for(space=1;space<=rows-i;space++)
+{
+printf(" ");
+}
+for(j=0-i;j<=i;j++)
+{
+printf("%2d",abs(j));
+}
+printf("\n");
+}
+getch();
+}
